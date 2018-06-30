@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="hotel" Class="otelResepsiyonDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=HOPE\SQLEXPRESS;Initial Catalog=hotel;Integrated Security=True" SettingsObjectName="ResepsiyonOtomasyon.Properties.Settings" SettingsPropertyName="hotelConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbl_musteri" Member="tbl_musteris">
+    <Type Name="tbl_musteri">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AdiSoyadi" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="CepTel" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="isTel" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EvTel" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="mailAdress" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="Ulke" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="girisTarih" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="cikisTarih" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="KisiSayisi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sehir" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="seriNo" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="AnaAdi" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="BabaAdi" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="Dogumyeri" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="DogumTarih" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="PasaportNo" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="VerildigiUlke" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="VerildigiTarih" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="BitisTarih" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="NotBilgi" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+      <Column Name="Adres" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="cinsiyet" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="odaNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_ucret" Member="tbl_ucrets">
+    <Type Name="tbl_ucret">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ucret" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_giris" Member="tbl_giris">
+    <Type Name="tbl_giri">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Kullanici" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="sifre" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="AdSoyad" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="TcNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Personel" Member="tbl_Personels">
+    <Type Name="tbl_Personel">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TCno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Adi" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="Soyadi" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="Cinsiyet" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="TelNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MedeniHali" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Maas" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="dogumTarih" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="adress" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="girisTarih" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="gorevi" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="mesaiSaati" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="mesaiUcreti" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_rezervasyon" Member="tbl_rezervasyons">
+    <Type Name="tbl_rezervasyon">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="KimlikSeriNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OdaNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AdSoyad" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="Giristarih" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Telefon" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Aciklama" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Cikistarih" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_gecmis" Member="tbl_gecmis">
+    <Type Name="tbl_gecmi">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AdiSoyadi" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="CepTel" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="isTel" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EvTel" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="mailAdress" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="Ulke" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="girisTarih" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="cikisTarih" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="KisiSayisi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sehir" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="seriNo" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="AnaAdi" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="BabaAdi" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="Dogumyeri" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="DogumTarih" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="PasaportNo" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="VerildigiUlke" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="VerildigiTarih" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="BitisTarih" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="NotBilgi" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+      <Column Name="Adres" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="cinsiyet" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="odaNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_odalar" Member="tbl_odalars">
+    <Type Name="tbl_odalar">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="odaNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

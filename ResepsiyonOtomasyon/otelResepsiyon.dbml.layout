@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="otelResepsiyon">
+  <DataContextMoniker Name="/otelResepsiyonDataContext" />
+  <nestedChildShapes>
+    <classShape Id="1a4ac70c-489b-4613-a043-7a65df76f53c" absoluteBounds="3.25, 0.625, 2, 5.4246240234375">
+      <DataClassMoniker Name="/otelResepsiyonDataContext/tbl_musteri" />
+      <nestedChildShapes>
+        <elementListCompartment Id="db7a1993-53c9-4b93-81e8-e1e43f098765" absoluteBounds="3.265, 1.085, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4b42b9e1-0083-4be5-8e99-097d5631642e" absoluteBounds="8, 4.375, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/otelResepsiyonDataContext/tbl_ucret" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7f706118-7eac-4cba-b52f-c72049eda652" absoluteBounds="8.015, 4.8350000000000009, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d2766abe-da1a-4214-9555-b5c40ab1926d" absoluteBounds="1.125, 0.625, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/otelResepsiyonDataContext/tbl_giri" />
+      <nestedChildShapes>
+        <elementListCompartment Id="14210fcc-ddad-4af6-8fdc-a519ef5e2718" absoluteBounds="1.1399999999999997, 1.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e3e82e53-55e7-44d0-8a60-12db64690f1b" absoluteBounds="8, 0.625, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/otelResepsiyonDataContext/tbl_Personel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3294e5f2-e881-430e-a5a6-9bd3eb079013" absoluteBounds="8.015, 1.085, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b42f2f5e-0202-443a-950d-b3d2191a6c1c" absoluteBounds="1.125, 2.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/otelResepsiyonDataContext/tbl_rezervasyon" />
+      <nestedChildShapes>
+        <elementListCompartment Id="750b16f7-8ae2-4e6b-8db0-d6e90e8923a9" absoluteBounds="1.1400000000000006, 2.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1d4df158-7ac2-442e-8ff3-c5e61aabbe13" absoluteBounds="5.625, 0.625, 2, 5.4246240234375">
+      <DataClassMoniker Name="/otelResepsiyonDataContext/tbl_gecmi" />
+      <nestedChildShapes>
+        <elementListCompartment Id="524d47e6-3da0-41ed-892c-89895062ecc3" absoluteBounds="5.64, 1.085, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5319dc03-3b8c-4f57-bbe4-fddd863bf34b" absoluteBounds="1.125, 5, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/otelResepsiyonDataContext/tbl_odalar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7a50105f-f59e-446d-b133-0d5ecd75d5c6" absoluteBounds="1.1399999999999997, 5.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
